@@ -80,6 +80,23 @@
                                             <constraint firstAttribute="height" constant="1" id="Ua6-PW-pZV"/>
                                         </constraints>
                                     </view>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter your phone number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qrO-ax-Dje" customClass="FPNTextField" customModule="FlagPhoneNumber">
+                                        <rect key="frame" x="27" y="289.5" width="330" height="18.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uu8-g5-atY">
+                                        <rect key="frame" x="27" y="318" width="330" height="1"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="fwQ-Fz-gya"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -87,6 +104,7 @@
                                     <constraint firstItem="x2Z-aP-D5Y" firstAttribute="top" secondItem="cev-TM-WkR" secondAttribute="bottom" constant="10" id="7Gs-My-Qet"/>
                                     <constraint firstItem="DbD-Yl-d8o" firstAttribute="leading" secondItem="bNc-XQ-BjM" secondAttribute="leading" id="9bJ-DC-5Aa"/>
                                     <constraint firstItem="biP-4f-RcS" firstAttribute="leading" secondItem="cfA-sj-qpn" secondAttribute="leading" id="AH8-qa-JPj"/>
+                                    <constraint firstItem="qrO-ax-Dje" firstAttribute="top" secondItem="x2Z-aP-D5Y" secondAttribute="bottom" constant="30" id="Ane-TD-bp7"/>
                                     <constraint firstItem="bNc-XQ-BjM" firstAttribute="leading" secondItem="JXi-uO-xrK" secondAttribute="leading" constant="27" id="Efr-fY-P8i"/>
                                     <constraint firstAttribute="trailing" secondItem="bNc-XQ-BjM" secondAttribute="trailing" constant="27" id="Ewf-04-Bjr"/>
                                     <constraint firstItem="cev-TM-WkR" firstAttribute="leading" secondItem="cfA-sj-qpn" secondAttribute="leading" id="H9z-Mg-ja2"/>
@@ -103,7 +121,12 @@
                                     <constraint firstItem="biP-4f-RcS" firstAttribute="trailing" secondItem="cfA-sj-qpn" secondAttribute="trailing" id="f0c-Nl-GOE"/>
                                     <constraint firstItem="DbD-Yl-d8o" firstAttribute="top" secondItem="bNc-XQ-BjM" secondAttribute="bottom" constant="40" id="gff-Ku-C7h"/>
                                     <constraint firstItem="NVQ-1g-Bh6" firstAttribute="top" secondItem="DbD-Yl-d8o" secondAttribute="bottom" constant="10" id="lND-Ur-TEp"/>
+                                    <constraint firstItem="uu8-g5-atY" firstAttribute="leading" secondItem="qrO-ax-Dje" secondAttribute="leading" id="qPm-3e-yhM"/>
+                                    <constraint firstItem="qrO-ax-Dje" firstAttribute="leading" secondItem="x2Z-aP-D5Y" secondAttribute="leading" id="rB5-3B-QKJ"/>
+                                    <constraint firstItem="uu8-g5-atY" firstAttribute="top" secondItem="qrO-ax-Dje" secondAttribute="bottom" constant="10" id="tdR-90-exr"/>
                                     <constraint firstItem="biP-4f-RcS" firstAttribute="top" secondItem="cfA-sj-qpn" secondAttribute="bottom" constant="10" id="v5E-cX-Vr9"/>
+                                    <constraint firstItem="uu8-g5-atY" firstAttribute="trailing" secondItem="qrO-ax-Dje" secondAttribute="trailing" id="vv9-Zt-Kyc"/>
+                                    <constraint firstItem="qrO-ax-Dje" firstAttribute="trailing" secondItem="x2Z-aP-D5Y" secondAttribute="trailing" id="z0P-11-T3C"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
