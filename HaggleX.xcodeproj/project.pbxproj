@@ -24,6 +24,7 @@
 		B458114D272054E4008222BE /* CreateAccount.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B458114C272054E4008222BE /* CreateAccount.storyboard */; };
 		B45811502720578C008222BE /* CountrySearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B458114F2720578C008222BE /* CountrySearchViewController.swift */; };
 		B4581152272057A0008222BE /* CountrySearch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4581151272057A0008222BE /* CountrySearch.storyboard */; };
+		B45811552720D0F1008222BE /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45811542720D0F1008222BE /* UIViewController+Extension.swift */; };
 		D502E6BE02587EFB7200F66F /* Pods_HaggleX_HaggleXUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7235599EA90B6E8F0F437CC3 /* Pods_HaggleX_HaggleXUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +74,7 @@
 		B458114C272054E4008222BE /* CreateAccount.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateAccount.storyboard; sourceTree = "<group>"; };
 		B458114F2720578C008222BE /* CountrySearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountrySearchViewController.swift; sourceTree = "<group>"; };
 		B4581151272057A0008222BE /* CountrySearch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CountrySearch.storyboard; sourceTree = "<group>"; };
+		B45811542720D0F1008222BE /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		D5B817665D57BC14BE5E8909 /* Pods_HaggleX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HaggleX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEB94997C203974FC9DA5992 /* Pods-HaggleX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HaggleX.debug.xcconfig"; path = "Target Support Files/Pods-HaggleX/Pods-HaggleX.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -125,7 +127,6 @@
 				76A93680DA02D15505A0DE7C /* Pods-HaggleXTests.debug.xcconfig */,
 				19414508ED3BDD625A2DE7A8 /* Pods-HaggleXTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -232,6 +233,7 @@
 			children = (
 				B45811452720511E008222BE /* UITextField+Extension.swift */,
 				B458114727205274008222BE /* UIView+Extension.swift */,
+				B45811542720D0F1008222BE /* UIViewController+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -495,6 +497,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B45811552720D0F1008222BE /* UIViewController+Extension.swift in Sources */,
 				B458114B272054CE008222BE /* CreateAccountViewController.swift in Sources */,
 				B458113E272048C8008222BE /* LoginViewController.swift in Sources */,
 				B45811462720511E008222BE /* UITextField+Extension.swift in Sources */,
