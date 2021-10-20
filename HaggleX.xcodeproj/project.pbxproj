@@ -18,6 +18,8 @@
 		B4581140272048E4008222BE /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B458113F272048E4008222BE /* Login.storyboard */; };
 		B45811462720511E008222BE /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45811452720511E008222BE /* UITextField+Extension.swift */; };
 		B458114827205274008222BE /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B458114727205274008222BE /* UIView+Extension.swift */; };
+		B458114B272054CE008222BE /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B458114A272054CE008222BE /* CreateAccountViewController.swift */; };
+		B458114D272054E4008222BE /* CreateAccount.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B458114C272054E4008222BE /* CreateAccount.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		B458114327204BF5008222BE /* FontsFree-Net-BasisGrotesquePro-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FontsFree-Net-BasisGrotesquePro-Regular.ttf"; sourceTree = "<group>"; };
 		B45811452720511E008222BE /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
 		B458114727205274008222BE /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		B458114A272054CE008222BE /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		B458114C272054E4008222BE /* CreateAccount.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateAccount.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,7 @@
 		B42F1B682720330100367596 /* HaggleX */ = {
 			isa = PBXGroup;
 			children = (
+				B4581149272054BD008222BE /* Create Account */,
 				B42F1B992720333000367596 /* App+Scene Delegate */,
 				B42F1B9C2720337200367596 /* LaunchScreen */,
 				B458113C272048BA008222BE /* Login */,
@@ -183,6 +188,15 @@
 				B458114727205274008222BE /* UIView+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B4581149272054BD008222BE /* Create Account */ = {
+			isa = PBXGroup;
+			children = (
+				B458114A272054CE008222BE /* CreateAccountViewController.swift */,
+				B458114C272054E4008222BE /* CreateAccount.storyboard */,
+			);
+			path = "Create Account";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,6 +303,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B458114D272054E4008222BE /* CreateAccount.storyboard in Resources */,
 				B4581140272048E4008222BE /* Login.storyboard in Resources */,
 				B42F1B762720330500367596 /* LaunchScreen.storyboard in Resources */,
 				B42F1B732720330500367596 /* Assets.xcassets in Resources */,
@@ -316,6 +331,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B458114B272054CE008222BE /* CreateAccountViewController.swift in Sources */,
 				B458113E272048C8008222BE /* LoginViewController.swift in Sources */,
 				B45811462720511E008222BE /* UITextField+Extension.swift in Sources */,
 				B42F1B6A2720330100367596 /* AppDelegate.swift in Sources */,

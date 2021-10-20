@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bis-jw-YVg">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
@@ -25,7 +25,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pg7-RF-hbq">
-                                <rect key="frame" x="29" y="194" width="211" height="46"/>
+                                <rect key="frame" x="29" y="238" width="211" height="46"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="46" id="4Ag-Wx-e4r"/>
                                 </constraints>
@@ -34,7 +34,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KED-Ac-E1p">
-                                <rect key="frame" x="29" y="280" width="350" height="14.5"/>
+                                <rect key="frame" x="29" y="324" width="350" height="14.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="BasisGrotesquePro-Regular" family="Basis Grotesque Pro" pointSize="11"/>
@@ -46,14 +46,14 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fEz-2l-EVx">
-                                <rect key="frame" x="29" y="304.5" width="350" height="1"/>
+                                <rect key="frame" x="29" y="348.5" width="350" height="1"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="vU2-Ht-BYS"/>
                                 </constraints>
                             </view>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password (Min. 8 characters)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uQK-I2-lFB">
-                                <rect key="frame" x="29" y="355.5" width="350" height="34"/>
+                                <rect key="frame" x="29" y="399.5" width="350" height="34"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="BasisGrotesquePro-Regular" family="Basis Grotesque Pro" pointSize="11"/>
@@ -65,22 +65,25 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fMm-BH-iPf">
-                                <rect key="frame" x="29" y="399.5" width="350" height="1"/>
+                                <rect key="frame" x="29" y="443.5" width="350" height="1"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="eb2-od-SxS"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hhf-ok-imr">
-                                <rect key="frame" x="241" y="430.5" width="138" height="30.5"/>
+                                <rect key="frame" x="241" y="474.5" width="138" height="30.5"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Forgot Password?">
                                     <fontDescription key="titleFontDescription" name="BasisGrotesquePro-Regular" family="Basis Grotesque Pro" pointSize="14"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="didTapForgotPassword:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="GE3-lY-Jel"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LGl-5d-bez">
-                                <rect key="frame" x="29" y="511" width="350" height="50"/>
+                                <rect key="frame" x="29" y="555" width="350" height="50"/>
                                 <color key="backgroundColor" red="1" green="0.75569790599999997" blue="0.4601598382" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="K4e-cO-39i"/>
@@ -95,12 +98,18 @@
                                         <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didTapLogin:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="nne-0z-z36"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OtB-Vc-lSv">
-                                <rect key="frame" x="29" y="591" width="350" height="31"/>
+                                <rect key="frame" x="29" y="635" width="350" height="31"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="New User? Create a new account "/>
+                                <connections>
+                                    <action selector="didTapCreateAccount:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Ht8-MD-9LY"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
@@ -130,10 +139,33 @@
                             <constraint firstItem="fEz-2l-EVx" firstAttribute="top" secondItem="KED-Ac-E1p" secondAttribute="bottom" constant="10" id="yVg-4c-beN"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="bjh-zd-fLO"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="KED-Ac-E1p" id="oe0-4F-Xld"/>
+                        <outlet property="passwordTextField" destination="uQK-I2-lFB" id="KIs-cj-FH3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="13" y="94"/>
+            <point key="canvasLocation" x="921.73913043478262" y="93.75"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8az-HU-3lc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bis-jw-YVg" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="lNT-qa-Eqe">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="0Hk-y3-NBZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6fa-PZ-foq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="11.594202898550726" y="93.75"/>
         </scene>
     </scenes>
     <resources>
