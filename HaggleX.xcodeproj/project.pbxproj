@@ -9,13 +9,19 @@
 /* Begin PBXBuildFile section */
 		B42F1B6A2720330100367596 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42F1B692720330100367596 /* AppDelegate.swift */; };
 		B42F1B6C2720330100367596 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42F1B6B2720330100367596 /* SceneDelegate.swift */; };
-		B42F1B6E2720330100367596 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42F1B6D2720330100367596 /* ViewController.swift */; };
-		B42F1B712720330100367596 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B42F1B6F2720330100367596 /* Main.storyboard */; };
 		B42F1B732720330500367596 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B42F1B722720330500367596 /* Assets.xcassets */; };
 		B42F1B762720330500367596 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B42F1B742720330500367596 /* LaunchScreen.storyboard */; };
 		B42F1B812720330600367596 /* HaggleXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42F1B802720330600367596 /* HaggleXTests.swift */; };
 		B42F1B8B2720330600367596 /* HaggleXUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42F1B8A2720330600367596 /* HaggleXUITests.swift */; };
 		B42F1B8D2720330600367596 /* HaggleXUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42F1B8C2720330600367596 /* HaggleXUITestsLaunchTests.swift */; };
+		B458113E272048C8008222BE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B458113D272048C8008222BE /* LoginViewController.swift */; };
+		B4581140272048E4008222BE /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B458113F272048E4008222BE /* Login.storyboard */; };
+		B45811462720511E008222BE /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45811452720511E008222BE /* UITextField+Extension.swift */; };
+		B458114827205274008222BE /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B458114727205274008222BE /* UIView+Extension.swift */; };
+		B458114B272054CE008222BE /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B458114A272054CE008222BE /* CreateAccountViewController.swift */; };
+		B458114D272054E4008222BE /* CreateAccount.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B458114C272054E4008222BE /* CreateAccount.storyboard */; };
+		B45811502720578C008222BE /* CountrySearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B458114F2720578C008222BE /* CountrySearchViewController.swift */; };
+		B4581152272057A0008222BE /* CountrySearch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4581151272057A0008222BE /* CountrySearch.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +45,6 @@
 		B42F1B662720330100367596 /* HaggleX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HaggleX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B42F1B692720330100367596 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B42F1B6B2720330100367596 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B42F1B6D2720330100367596 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B42F1B702720330100367596 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B42F1B722720330500367596 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B42F1B752720330500367596 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B42F1B772720330500367596 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +53,16 @@
 		B42F1B862720330600367596 /* HaggleXUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HaggleXUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B42F1B8A2720330600367596 /* HaggleXUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HaggleXUITests.swift; sourceTree = "<group>"; };
 		B42F1B8C2720330600367596 /* HaggleXUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HaggleXUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B458113D272048C8008222BE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B458113F272048E4008222BE /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		B458114227204BEB008222BE /* FontsFree-Net-BasisGrotesquePro-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FontsFree-Net-BasisGrotesquePro-Bold.ttf"; sourceTree = "<group>"; };
+		B458114327204BF5008222BE /* FontsFree-Net-BasisGrotesquePro-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FontsFree-Net-BasisGrotesquePro-Regular.ttf"; sourceTree = "<group>"; };
+		B45811452720511E008222BE /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
+		B458114727205274008222BE /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		B458114A272054CE008222BE /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		B458114C272054E4008222BE /* CreateAccount.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateAccount.storyboard; sourceTree = "<group>"; };
+		B458114F2720578C008222BE /* CountrySearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountrySearchViewController.swift; sourceTree = "<group>"; };
+		B4581151272057A0008222BE /* CountrySearch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CountrySearch.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +115,11 @@
 			children = (
 				B42F1B992720333000367596 /* App+Scene Delegate */,
 				B42F1B9C2720337200367596 /* LaunchScreen */,
-				B42F1B6D2720330100367596 /* ViewController.swift */,
-				B42F1B6F2720330100367596 /* Main.storyboard */,
+				B458113C272048BA008222BE /* Login */,
+				B458114E27205775008222BE /* CountrySearch */,
+				B4581149272054BD008222BE /* Create Account */,
+				B458114427205102008222BE /* Extensions */,
+				B458114127204ACF008222BE /* CustomFonts */,
 				B42F1B9B2720335100367596 /* Resources */,
 			);
 			path = HaggleX;
@@ -149,6 +166,51 @@
 				B42F1B742720330500367596 /* LaunchScreen.storyboard */,
 			);
 			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		B458113C272048BA008222BE /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B458113D272048C8008222BE /* LoginViewController.swift */,
+				B458113F272048E4008222BE /* Login.storyboard */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		B458114127204ACF008222BE /* CustomFonts */ = {
+			isa = PBXGroup;
+			children = (
+				B458114227204BEB008222BE /* FontsFree-Net-BasisGrotesquePro-Bold.ttf */,
+				B458114327204BF5008222BE /* FontsFree-Net-BasisGrotesquePro-Regular.ttf */,
+			);
+			path = CustomFonts;
+			sourceTree = "<group>";
+		};
+		B458114427205102008222BE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B45811452720511E008222BE /* UITextField+Extension.swift */,
+				B458114727205274008222BE /* UIView+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B4581149272054BD008222BE /* Create Account */ = {
+			isa = PBXGroup;
+			children = (
+				B458114A272054CE008222BE /* CreateAccountViewController.swift */,
+				B458114C272054E4008222BE /* CreateAccount.storyboard */,
+			);
+			path = "Create Account";
+			sourceTree = "<group>";
+		};
+		B458114E27205775008222BE /* CountrySearch */ = {
+			isa = PBXGroup;
+			children = (
+				B458114F2720578C008222BE /* CountrySearchViewController.swift */,
+				B4581151272057A0008222BE /* CountrySearch.storyboard */,
+			);
+			path = CountrySearch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,9 +317,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B458114D272054E4008222BE /* CreateAccount.storyboard in Resources */,
+				B4581140272048E4008222BE /* Login.storyboard in Resources */,
 				B42F1B762720330500367596 /* LaunchScreen.storyboard in Resources */,
 				B42F1B732720330500367596 /* Assets.xcassets in Resources */,
-				B42F1B712720330100367596 /* Main.storyboard in Resources */,
+				B4581152272057A0008222BE /* CountrySearch.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,8 +346,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B42F1B6E2720330100367596 /* ViewController.swift in Sources */,
+				B458114B272054CE008222BE /* CreateAccountViewController.swift in Sources */,
+				B458113E272048C8008222BE /* LoginViewController.swift in Sources */,
+				B45811462720511E008222BE /* UITextField+Extension.swift in Sources */,
+				B45811502720578C008222BE /* CountrySearchViewController.swift in Sources */,
 				B42F1B6A2720330100367596 /* AppDelegate.swift in Sources */,
+				B458114827205274008222BE /* UIView+Extension.swift in Sources */,
 				B42F1B6C2720330100367596 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,14 +389,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B42F1B6F2720330100367596 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B42F1B702720330100367596 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B42F1B742720330500367596 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -468,7 +528,7 @@
 				INFOPLIST_FILE = HaggleX/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Login;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -496,7 +556,7 @@
 				INFOPLIST_FILE = HaggleX/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Login;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
