@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="FontsFree-Net-BasisGrotesquePro-Bold.ttf">
+            <string>BasisGrotesquePro-Bold</string>
+        </array>
+        <array key="FontsFree-Net-BasisGrotesquePro-Regular.ttf">
+            <string>BasisGrotesquePro-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="LoginViewController" customModule="HaggleX" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pg7-RF-hbq">
+                                <rect key="frame" x="29" y="194" width="211" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="4Ag-Wx-e4r"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BasisGrotesquePro-Bold" family="Basis Grotesque Pro" pointSize="46"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KED-Ac-E1p">
+                                <rect key="frame" x="29" y="280" width="350" height="14.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="BasisGrotesquePro-Regular" family="Basis Grotesque Pro" pointSize="11"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fEz-2l-EVx">
+                                <rect key="frame" x="29" y="304.5" width="350" height="1"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="vU2-Ht-BYS"/>
+                                </constraints>
+                            </view>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password (Min. 8 characters)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uQK-I2-lFB">
+                                <rect key="frame" x="29" y="355.5" width="350" height="34"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="BasisGrotesquePro-Regular" family="Basis Grotesque Pro" pointSize="11"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fMm-BH-iPf">
+                                <rect key="frame" x="29" y="399.5" width="350" height="1"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="eb2-od-SxS"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hhf-ok-imr">
+                                <rect key="frame" x="241" y="430.5" width="138" height="30.5"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Forgot Password?">
+                                    <fontDescription key="titleFontDescription" name="BasisGrotesquePro-Regular" family="Basis Grotesque Pro" pointSize="14"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LGl-5d-bez">
+                                <rect key="frame" x="29" y="511" width="350" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.75569790599999997" blue="0.4601598382" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="K4e-cO-39i"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="LOG IN">
+                                    <fontDescription key="titleFontDescription" name="BasisGrotesquePro-Bold" family="Basis Grotesque Pro" pointSize="12"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OtB-Vc-lSv">
+                                <rect key="frame" x="29" y="591" width="350" height="31"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="New User? Create a new account "/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="0.1647572517" green="0.083324156699999999" blue="0.38689625259999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pg7-RF-hbq" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="150" id="3Cb-r2-VXo"/>
+                            <constraint firstItem="OtB-Vc-lSv" firstAttribute="trailing" secondItem="LGl-5d-bez" secondAttribute="trailing" id="8Oj-gQ-pz8"/>
+                            <constraint firstItem="fEz-2l-EVx" firstAttribute="trailing" secondItem="KED-Ac-E1p" secondAttribute="trailing" id="GLP-Pp-LQa"/>
+                            <constraint firstItem="OtB-Vc-lSv" firstAttribute="leading" secondItem="LGl-5d-bez" secondAttribute="leading" id="HQh-aM-fqS"/>
+                            <constraint firstItem="fMm-BH-iPf" firstAttribute="leading" secondItem="uQK-I2-lFB" secondAttribute="leading" id="HRg-KZ-Jjw"/>
+                            <constraint firstItem="hhf-ok-imr" firstAttribute="top" secondItem="fMm-BH-iPf" secondAttribute="bottom" constant="30" id="KON-TU-GTw"/>
+                            <constraint firstItem="hhf-ok-imr" firstAttribute="trailing" secondItem="fMm-BH-iPf" secondAttribute="trailing" id="M5O-3t-CfY"/>
+                            <constraint firstItem="uQK-I2-lFB" firstAttribute="top" secondItem="fEz-2l-EVx" secondAttribute="bottom" constant="50" id="O9Z-bs-c1A"/>
+                            <constraint firstItem="OtB-Vc-lSv" firstAttribute="top" secondItem="LGl-5d-bez" secondAttribute="bottom" constant="30" id="O9l-bd-eNN"/>
+                            <constraint firstItem="fEz-2l-EVx" firstAttribute="leading" secondItem="KED-Ac-E1p" secondAttribute="leading" id="Ref-h5-n90"/>
+                            <constraint firstItem="LGl-5d-bez" firstAttribute="top" secondItem="hhf-ok-imr" secondAttribute="bottom" constant="50" id="WYT-sc-4aF"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="KED-Ac-E1p" secondAttribute="trailing" constant="35" id="YDY-Og-Qlw"/>
+                            <constraint firstItem="fMm-BH-iPf" firstAttribute="trailing" secondItem="uQK-I2-lFB" secondAttribute="trailing" id="bsB-6M-b3b"/>
+                            <constraint firstItem="uQK-I2-lFB" firstAttribute="leading" secondItem="fEz-2l-EVx" secondAttribute="leading" id="dCh-ty-H1Y"/>
+                            <constraint firstItem="fMm-BH-iPf" firstAttribute="top" secondItem="uQK-I2-lFB" secondAttribute="bottom" constant="10" id="iiI-qh-RAW"/>
+                            <constraint firstItem="pg7-RF-hbq" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="29" id="jzi-U1-uIn"/>
+                            <constraint firstItem="LGl-5d-bez" firstAttribute="leading" secondItem="fMm-BH-iPf" secondAttribute="leading" id="l5k-es-J82"/>
+                            <constraint firstItem="LGl-5d-bez" firstAttribute="trailing" secondItem="fMm-BH-iPf" secondAttribute="trailing" id="n5P-ME-ETe"/>
+                            <constraint firstItem="uQK-I2-lFB" firstAttribute="trailing" secondItem="fEz-2l-EVx" secondAttribute="trailing" id="n6j-KH-XNV"/>
+                            <constraint firstItem="KED-Ac-E1p" firstAttribute="top" secondItem="pg7-RF-hbq" secondAttribute="bottom" constant="40" id="nmC-Zy-fNa"/>
+                            <constraint firstItem="KED-Ac-E1p" firstAttribute="leading" secondItem="pg7-RF-hbq" secondAttribute="leading" id="woh-6X-5A7"/>
+                            <constraint firstItem="fEz-2l-EVx" firstAttribute="top" secondItem="KED-Ac-E1p" secondAttribute="bottom" constant="10" id="yVg-4c-beN"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="13" y="94"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

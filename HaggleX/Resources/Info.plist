@@ -16,10 +16,15 @@
 					<key>UISceneDelegateClassName</key>
 					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
 					<key>UISceneStoryboardFile</key>
-					<string>Main</string>
+					<string>Login</string>
 				</dict>
 			</array>
 		</dict>
 	</dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>FontsFree-Net-BasisGrotesquePro-Regular.tff</string>
+		<string>FontsFree-Net-BasisGrotesquePro-Bold.ttf</string>
+	</array>
 </dict>
 </plist>
