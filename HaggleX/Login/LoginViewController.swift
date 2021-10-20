@@ -25,12 +25,20 @@ class LoginViewController: UIViewController {
     // MARK: - Actions
     
     @IBAction func didTapForgotPassword(_ sender: UIButton) {
+        presentCreateAccountScreen()
     }
     
     @IBAction func didTapLogin(_ sender: UIButton) {
+        presentCreateAccountScreen()
     }
     
     @IBAction func didTapCreateAccount(_ sender: UIButton) {
+        presentCreateAccountScreen()
+    }
+    
+    // MARK: - Methods
+    
+    private func presentCreateAccountScreen() {
         guard let createAccountVC = UIStoryboard(name: "CreateAccount", bundle: nil).instantiateViewController(withIdentifier: "CreateAccountViewController") as? CreateAccountViewController else {
             return
         }
