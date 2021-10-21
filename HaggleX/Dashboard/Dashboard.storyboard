@@ -7,6 +7,14 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="FontsFree-Net-BasisGrotesquePro-Bold.ttf">
+            <string>BasisGrotesquePro-Bold</string>
+        </array>
+        <array key="FontsFree-Net-BasisGrotesquePro-Regular.ttf">
+            <string>BasisGrotesquePro-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Dashboard View Controller-->
         <scene sceneID="s0d-6b-0kx">
@@ -15,16 +23,92 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BXi-me-HTR">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sv" translatesAutoresizingMaskIntoConstraints="NO" id="fUy-39-UiH">
+                                        <rect key="frame" x="30" y="60" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="ibx-oa-Tms"/>
+                                            <constraint firstAttribute="width" constant="40" id="jTr-Bm-Xmh"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HaggleX" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4H7-38-2YD">
+                                        <rect key="frame" x="168" y="68.5" width="78" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="BasisGrotesquePro-Bold" family="Basis Grotesque Pro" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p7A-IJ-RiP">
+                                        <rect key="frame" x="344" y="60" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="RHj-xr-dlQ"/>
+                                            <constraint firstAttribute="width" constant="40" id="bf1-6k-bo4"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="notification"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total portfolio balance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nz4-Eo-07d">
+                                        <rect key="frame" x="30" y="120" width="122" height="14"/>
+                                        <fontDescription key="fontDescription" name="BasisGrotesquePro-Regular" family="Basis Grotesque Pro" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$****" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hMv-C4-FTZ">
+                                        <rect key="frame" x="30" y="144" width="72.5" height="35"/>
+                                        <fontDescription key="fontDescription" name="BasisGrotesquePro-Bold" family="Basis Grotesque Pro" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Wde-Ie-AAb">
+                                        <rect key="frame" x="284" y="146" width="100" height="32"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="Mwm-S4-EUV"/>
+                                        </constraints>
+                                        <segments>
+                                            <segment title="USD"/>
+                                            <segment title="NGN"/>
+                                        </segments>
+                                        <color key="selectedSegmentTintColor" red="1" green="0.75569790599999997" blue="0.4601598382" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </segmentedControl>
+                                </subviews>
+                                <color key="backgroundColor" red="0.1647572517" green="0.083324156699999999" blue="0.38689625259999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="4H7-38-2YD" firstAttribute="centerX" secondItem="BXi-me-HTR" secondAttribute="centerX" id="1qx-Hp-wC7"/>
+                                    <constraint firstAttribute="height" constant="200" id="4Zr-j0-1nG"/>
+                                    <constraint firstItem="4H7-38-2YD" firstAttribute="centerY" secondItem="fUy-39-UiH" secondAttribute="centerY" id="EWR-8V-1C4"/>
+                                    <constraint firstItem="Wde-Ie-AAb" firstAttribute="trailing" secondItem="p7A-IJ-RiP" secondAttribute="trailing" id="Eec-Jv-L7M"/>
+                                    <constraint firstItem="fUy-39-UiH" firstAttribute="top" secondItem="BXi-me-HTR" secondAttribute="top" constant="60" id="IW6-ve-JXJ"/>
+                                    <constraint firstItem="p7A-IJ-RiP" firstAttribute="centerY" secondItem="fUy-39-UiH" secondAttribute="centerY" id="SfM-f3-9IG"/>
+                                    <constraint firstItem="hMv-C4-FTZ" firstAttribute="leading" secondItem="Nz4-Eo-07d" secondAttribute="leading" id="UgM-WO-SvZ"/>
+                                    <constraint firstItem="fUy-39-UiH" firstAttribute="leading" secondItem="BXi-me-HTR" secondAttribute="leading" constant="30" id="fRU-Pa-5hc"/>
+                                    <constraint firstAttribute="trailing" secondItem="p7A-IJ-RiP" secondAttribute="trailing" constant="30" id="h5b-Pg-E5Q"/>
+                                    <constraint firstItem="Nz4-Eo-07d" firstAttribute="top" secondItem="fUy-39-UiH" secondAttribute="bottom" constant="20" id="kQ9-Iy-uPx"/>
+                                    <constraint firstItem="Wde-Ie-AAb" firstAttribute="centerY" secondItem="hMv-C4-FTZ" secondAttribute="centerY" id="kfa-cf-yPq"/>
+                                    <constraint firstItem="Nz4-Eo-07d" firstAttribute="leading" secondItem="fUy-39-UiH" secondAttribute="leading" id="o78-C1-UU2"/>
+                                    <constraint firstItem="hMv-C4-FTZ" firstAttribute="top" secondItem="Nz4-Eo-07d" secondAttribute="bottom" constant="10" id="pJp-QY-aDM"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BXi-me-HTR" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="59b-YM-aHt"/>
+                            <constraint firstItem="BXi-me-HTR" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="XEY-MD-AEE"/>
+                            <constraint firstAttribute="trailing" secondItem="BXi-me-HTR" secondAttribute="trailing" id="XTY-RM-9Pe"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="14" y="94"/>
+            <point key="canvasLocation" x="13.043478260869566" y="93.75"/>
         </scene>
     </scenes>
     <resources>
+        <image name="notification" width="62" height="48"/>
+        <image name="sv" width="84" height="64"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
