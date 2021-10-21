@@ -46,7 +46,7 @@ extension UIViewController {
         
         setupCompleteVC.modalPresentationStyle = .fullScreen
         
-        navigationController?.present(setupCompleteVC, animated: true)
+        navigationController?.pushViewController(setupCompleteVC, animated: true)
     }
     
     public func presentDashboard() {

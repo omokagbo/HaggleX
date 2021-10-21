@@ -11,6 +11,15 @@ class SetupCompleteViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupNavbar()
+        self.navigationItem.setHidesBackButton(true, animated: true)
     }
+    
+    // MARK: - Actions
+    
+    @IBAction func didTapExplore(_ sender: UIButton) {
+        self.presentDashboard()
+    }
+    
     
 }
