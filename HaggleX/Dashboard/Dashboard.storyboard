@@ -5,6 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -72,6 +73,9 @@
                                             <segment title="NGN"/>
                                         </segments>
                                         <color key="selectedSegmentTintColor" red="1" green="0.75569790599999997" blue="0.4601598382" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="didChangeSegment:" destination="Y6W-OH-hqX" eventType="valueChanged" id="ae7-Qs-Knx"/>
+                                        </connections>
                                     </segmentedControl>
                                 </subviews>
                                 <color key="backgroundColor" red="0.1647572517" green="0.083324156699999999" blue="0.38689625259999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -91,22 +95,74 @@
                                     <constraint firstItem="hMv-C4-FTZ" firstAttribute="top" secondItem="Nz4-Eo-07d" secondAttribute="bottom" constant="10" id="pJp-QY-aDM"/>
                                 </constraints>
                             </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="04J-Fr-979">
+                                <rect key="frame" x="10" y="210" width="404" height="100"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="GfB-Wm-lnV"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="YLC-Y2-QyR">
+                                    <size key="itemSize" width="399" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="I1U-BD-20e">
+                                        <rect key="frame" x="0.0" y="-14" width="399" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="xgf-YM-eda">
+                                            <rect key="frame" x="0.0" y="0.0" width="399" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="marketplace" translatesAutoresizingMaskIntoConstraints="NO" id="NhB-W4-7PR">
+                                                    <rect key="frame" x="0.0" y="0.0" width="399" height="128"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="NhB-W4-7PR" secondAttribute="bottom" id="195-Bo-dmZ"/>
+                                                <constraint firstAttribute="trailing" secondItem="NhB-W4-7PR" secondAttribute="trailing" id="ZPX-l0-nHV"/>
+                                                <constraint firstItem="NhB-W4-7PR" firstAttribute="top" secondItem="xgf-YM-eda" secondAttribute="top" id="naj-hM-1PR"/>
+                                                <constraint firstItem="NhB-W4-7PR" firstAttribute="leading" secondItem="xgf-YM-eda" secondAttribute="leading" id="oA2-Mr-nD7"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="399" height="128"/>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="Y6W-OH-hqX" id="A8O-ug-0QD"/>
+                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="miA-ZD-Uwb"/>
+                                </connections>
+                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="04J-Fr-979" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" constant="10" id="4qw-sy-zlN"/>
                             <constraint firstItem="BXi-me-HTR" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="59b-YM-aHt"/>
+                            <constraint firstAttribute="trailing" secondItem="04J-Fr-979" secondAttribute="trailing" id="LAg-tV-Mtv"/>
                             <constraint firstItem="BXi-me-HTR" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="XEY-MD-AEE"/>
                             <constraint firstAttribute="trailing" secondItem="BXi-me-HTR" secondAttribute="trailing" id="XTY-RM-9Pe"/>
+                            <constraint firstItem="04J-Fr-979" firstAttribute="top" secondItem="BXi-me-HTR" secondAttribute="bottom" constant="10" id="fwL-FO-gcf"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="balanceLabel" destination="hMv-C4-FTZ" id="FMx-mK-Lex"/>
+                        <outlet property="collectionView" destination="04J-Fr-979" id="cmC-ma-0zV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="13.043478260869566" y="93.75"/>
+            <point key="canvasLocation" x="-354" y="134"/>
         </scene>
     </scenes>
     <resources>
+        <image name="marketplace" width="512" height="178"/>
         <image name="notification" width="62" height="48"/>
         <image name="sv" width="84" height="64"/>
         <systemColor name="systemBackgroundColor">
