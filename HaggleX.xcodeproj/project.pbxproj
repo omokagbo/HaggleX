@@ -32,7 +32,7 @@
 		B45811672721A474008222BE /* CoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45811662721A474008222BE /* CoinModel.swift */; };
 		B458116A2721A502008222BE /* CoinsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45811692721A502008222BE /* CoinsTableViewCell.swift */; };
 		B458116D2721AE71008222BE /* CoinViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B458116C2721AE71008222BE /* CoinViewModel.swift */; };
-		B458116F272220F9008222BE /* CryptoNewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B458116E272220F9008222BE /* CryptoNewsTableViewCell.swift */; };
+		B458117327222ECC008222BE /* introspectionSchema.json in Resources */ = {isa = PBXBuildFile; fileRef = B458117227222ECC008222BE /* introspectionSchema.json */; };
 		D502E6BE02587EFB7200F66F /* Pods_HaggleX_HaggleXUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7235599EA90B6E8F0F437CC3 /* Pods_HaggleX_HaggleXUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -90,7 +90,7 @@
 		B45811662721A474008222BE /* CoinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinModel.swift; sourceTree = "<group>"; };
 		B45811692721A502008222BE /* CoinsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsTableViewCell.swift; sourceTree = "<group>"; };
 		B458116C2721AE71008222BE /* CoinViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinViewModel.swift; sourceTree = "<group>"; };
-		B458116E272220F9008222BE /* CryptoNewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoNewsTableViewCell.swift; sourceTree = "<group>"; };
+		B458117227222ECC008222BE /* introspectionSchema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = introspectionSchema.json; sourceTree = "<group>"; };
 		D5B817665D57BC14BE5E8909 /* Pods_HaggleX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HaggleX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEB94997C203974FC9DA5992 /* Pods-HaggleX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HaggleX.debug.xcconfig"; path = "Target Support Files/Pods-HaggleX/Pods-HaggleX.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -184,6 +184,7 @@
 				B458114427205102008222BE /* Extensions */,
 				B458114127204ACF008222BE /* CustomFonts */,
 				B42F1B9B2720335100367596 /* Resources */,
+				B458117227222ECC008222BE /* introspectionSchema.json */,
 			);
 			path = HaggleX;
 			sourceTree = "<group>";
@@ -307,7 +308,6 @@
 			isa = PBXGroup;
 			children = (
 				B45811692721A502008222BE /* CoinsTableViewCell.swift */,
-				B458116E272220F9008222BE /* CryptoNewsTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -431,6 +431,7 @@
 			files = (
 				B458114D272054E4008222BE /* CreateAccount.storyboard in Resources */,
 				B4581140272048E4008222BE /* Login.storyboard in Resources */,
+				B458117327222ECC008222BE /* introspectionSchema.json in Resources */,
 				B42F1B762720330500367596 /* LaunchScreen.storyboard in Resources */,
 				B45811602720DDBB008222BE /* SetupComplete.storyboard in Resources */,
 				B458115A2720DB0A008222BE /* VerifyAccount.storyboard in Resources */,
@@ -566,7 +567,6 @@
 				B45811552720D0F1008222BE /* UIViewController+Extension.swift in Sources */,
 				B458114B272054CE008222BE /* CreateAccountViewController.swift in Sources */,
 				B458115E2720DD94008222BE /* SetupCompleteViewController.swift in Sources */,
-				B458116F272220F9008222BE /* CryptoNewsTableViewCell.swift in Sources */,
 				B458116A2721A502008222BE /* CoinsTableViewCell.swift in Sources */,
 				B458113E272048C8008222BE /* LoginViewController.swift in Sources */,
 				B45811672721A474008222BE /* CoinModel.swift in Sources */,
