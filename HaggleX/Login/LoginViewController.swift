@@ -25,25 +25,22 @@ class LoginViewController: UIViewController {
     // MARK: - Actions
     
     @IBAction func didTapForgotPassword(_ sender: UIButton) {
-        presentCreateAccountScreen()
+        self.showDefaultAlert(title: "Oooops", message: "This functionality is coming soon")
     }
     
     @IBAction func didTapLogin(_ sender: UIButton) {
-        presentCreateAccountScreen()
+        // validate login
+        
+        // present dashboard
+        self.presentDashboard()
     }
     
     @IBAction func didTapCreateAccount(_ sender: UIButton) {
-        presentCreateAccountScreen()
+        self.presentCreateAccountScreen()
     }
     
-    // MARK: - Methods
-    
-    private func presentCreateAccountScreen() {
-        guard let createAccountVC = UIStoryboard(name: "CreateAccount", bundle: nil).instantiateViewController(withIdentifier: "CreateAccountViewController") as? CreateAccountViewController else {
-            return
-        }
-        navigationController?.pushViewController(createAccountVC, animated: true)
+    private func validateLogin() {
+        
     }
-    
     
 }

@@ -22,9 +22,13 @@
 		B458114827205274008222BE /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B458114727205274008222BE /* UIView+Extension.swift */; };
 		B458114B272054CE008222BE /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B458114A272054CE008222BE /* CreateAccountViewController.swift */; };
 		B458114D272054E4008222BE /* CreateAccount.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B458114C272054E4008222BE /* CreateAccount.storyboard */; };
-		B45811502720578C008222BE /* CountrySearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B458114F2720578C008222BE /* CountrySearchViewController.swift */; };
-		B4581152272057A0008222BE /* CountrySearch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4581151272057A0008222BE /* CountrySearch.storyboard */; };
 		B45811552720D0F1008222BE /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45811542720D0F1008222BE /* UIViewController+Extension.swift */; };
+		B45811582720DAEF008222BE /* VerifyAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45811572720DAEF008222BE /* VerifyAccountViewController.swift */; };
+		B458115A2720DB0A008222BE /* VerifyAccount.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B45811592720DB0A008222BE /* VerifyAccount.storyboard */; };
+		B458115E2720DD94008222BE /* SetupCompleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B458115D2720DD94008222BE /* SetupCompleteViewController.swift */; };
+		B45811602720DDBB008222BE /* SetupComplete.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B458115F2720DDBB008222BE /* SetupComplete.storyboard */; };
+		B45811622720DDD9008222BE /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45811612720DDD9008222BE /* DashboardViewController.swift */; };
+		B45811642720DDFA008222BE /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B45811632720DDFA008222BE /* Dashboard.storyboard */; };
 		D502E6BE02587EFB7200F66F /* Pods_HaggleX_HaggleXUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7235599EA90B6E8F0F437CC3 /* Pods_HaggleX_HaggleXUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -72,9 +76,13 @@
 		B458114727205274008222BE /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		B458114A272054CE008222BE /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		B458114C272054E4008222BE /* CreateAccount.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateAccount.storyboard; sourceTree = "<group>"; };
-		B458114F2720578C008222BE /* CountrySearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountrySearchViewController.swift; sourceTree = "<group>"; };
-		B4581151272057A0008222BE /* CountrySearch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CountrySearch.storyboard; sourceTree = "<group>"; };
 		B45811542720D0F1008222BE /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		B45811572720DAEF008222BE /* VerifyAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyAccountViewController.swift; sourceTree = "<group>"; };
+		B45811592720DB0A008222BE /* VerifyAccount.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VerifyAccount.storyboard; sourceTree = "<group>"; };
+		B458115D2720DD94008222BE /* SetupCompleteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupCompleteViewController.swift; sourceTree = "<group>"; };
+		B458115F2720DDBB008222BE /* SetupComplete.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SetupComplete.storyboard; sourceTree = "<group>"; };
+		B45811612720DDD9008222BE /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		B45811632720DDFA008222BE /* Dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
 		D5B817665D57BC14BE5E8909 /* Pods_HaggleX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HaggleX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEB94997C203974FC9DA5992 /* Pods-HaggleX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HaggleX.debug.xcconfig"; path = "Target Support Files/Pods-HaggleX/Pods-HaggleX.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -158,8 +166,10 @@
 				B42F1B992720333000367596 /* App+Scene Delegate */,
 				B42F1B9C2720337200367596 /* LaunchScreen */,
 				B458113C272048BA008222BE /* Login */,
-				B458114E27205775008222BE /* CountrySearch */,
 				B4581149272054BD008222BE /* Create Account */,
+				B45811562720DAD7008222BE /* Verify Account */,
+				B458115B2720DD6D008222BE /* Setup Complete */,
+				B458115C2720DD7E008222BE /* Dashboard */,
 				B458114427205102008222BE /* Extensions */,
 				B458114127204ACF008222BE /* CustomFonts */,
 				B42F1B9B2720335100367596 /* Resources */,
@@ -247,13 +257,31 @@
 			path = "Create Account";
 			sourceTree = "<group>";
 		};
-		B458114E27205775008222BE /* CountrySearch */ = {
+		B45811562720DAD7008222BE /* Verify Account */ = {
 			isa = PBXGroup;
 			children = (
-				B458114F2720578C008222BE /* CountrySearchViewController.swift */,
-				B4581151272057A0008222BE /* CountrySearch.storyboard */,
+				B45811572720DAEF008222BE /* VerifyAccountViewController.swift */,
+				B45811592720DB0A008222BE /* VerifyAccount.storyboard */,
 			);
-			path = CountrySearch;
+			path = "Verify Account";
+			sourceTree = "<group>";
+		};
+		B458115B2720DD6D008222BE /* Setup Complete */ = {
+			isa = PBXGroup;
+			children = (
+				B458115D2720DD94008222BE /* SetupCompleteViewController.swift */,
+				B458115F2720DDBB008222BE /* SetupComplete.storyboard */,
+			);
+			path = "Setup Complete";
+			sourceTree = "<group>";
+		};
+		B458115C2720DD7E008222BE /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				B45811612720DDD9008222BE /* DashboardViewController.swift */,
+				B45811632720DDFA008222BE /* Dashboard.storyboard */,
+			);
+			path = Dashboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -368,8 +396,10 @@
 				B458114D272054E4008222BE /* CreateAccount.storyboard in Resources */,
 				B4581140272048E4008222BE /* Login.storyboard in Resources */,
 				B42F1B762720330500367596 /* LaunchScreen.storyboard in Resources */,
+				B45811602720DDBB008222BE /* SetupComplete.storyboard in Resources */,
+				B458115A2720DB0A008222BE /* VerifyAccount.storyboard in Resources */,
+				B45811642720DDFA008222BE /* Dashboard.storyboard in Resources */,
 				B42F1B732720330500367596 /* Assets.xcassets in Resources */,
-				B4581152272057A0008222BE /* CountrySearch.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,12 +529,14 @@
 			files = (
 				B45811552720D0F1008222BE /* UIViewController+Extension.swift in Sources */,
 				B458114B272054CE008222BE /* CreateAccountViewController.swift in Sources */,
+				B458115E2720DD94008222BE /* SetupCompleteViewController.swift in Sources */,
 				B458113E272048C8008222BE /* LoginViewController.swift in Sources */,
 				B45811462720511E008222BE /* UITextField+Extension.swift in Sources */,
-				B45811502720578C008222BE /* CountrySearchViewController.swift in Sources */,
 				B42F1B6A2720330100367596 /* AppDelegate.swift in Sources */,
 				B458114827205274008222BE /* UIView+Extension.swift in Sources */,
+				B45811622720DDD9008222BE /* DashboardViewController.swift in Sources */,
 				B42F1B6C2720330100367596 /* SceneDelegate.swift in Sources */,
+				B45811582720DAEF008222BE /* VerifyAccountViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

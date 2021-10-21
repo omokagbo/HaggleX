@@ -40,14 +40,10 @@ class CreateAccountViewController: UIViewController {
     // MARK: - Actions
     
     @IBAction func didTapSignup(_ sender: UIButton) {
+        self.presentVerifyAccountScreen()
     }
     
     // MARK: - Methods
-    
-    private func setupNavbar() {
-        navigationController?.navigationBar.tintColor = .white
-        self.navigationController?.navigationBar.topItem?.title = " "
-    }
     
     private func setupPhoneNumberTextField() {
         phoneNumberTextField.displayMode = .list
