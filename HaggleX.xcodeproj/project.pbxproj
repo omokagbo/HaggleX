@@ -29,6 +29,10 @@
 		B45811602720DDBB008222BE /* SetupComplete.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B458115F2720DDBB008222BE /* SetupComplete.storyboard */; };
 		B45811622720DDD9008222BE /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45811612720DDD9008222BE /* DashboardViewController.swift */; };
 		B45811642720DDFA008222BE /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B45811632720DDFA008222BE /* Dashboard.storyboard */; };
+		B45811672721A474008222BE /* CoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45811662721A474008222BE /* CoinModel.swift */; };
+		B458116A2721A502008222BE /* CoinsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45811692721A502008222BE /* CoinsTableViewCell.swift */; };
+		B458116D2721AE71008222BE /* CoinViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B458116C2721AE71008222BE /* CoinViewModel.swift */; };
+		B458116F272220F9008222BE /* CryptoNewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B458116E272220F9008222BE /* CryptoNewsTableViewCell.swift */; };
 		D502E6BE02587EFB7200F66F /* Pods_HaggleX_HaggleXUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7235599EA90B6E8F0F437CC3 /* Pods_HaggleX_HaggleXUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -83,6 +87,10 @@
 		B458115F2720DDBB008222BE /* SetupComplete.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SetupComplete.storyboard; sourceTree = "<group>"; };
 		B45811612720DDD9008222BE /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		B45811632720DDFA008222BE /* Dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
+		B45811662721A474008222BE /* CoinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinModel.swift; sourceTree = "<group>"; };
+		B45811692721A502008222BE /* CoinsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsTableViewCell.swift; sourceTree = "<group>"; };
+		B458116C2721AE71008222BE /* CoinViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinViewModel.swift; sourceTree = "<group>"; };
+		B458116E272220F9008222BE /* CryptoNewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoNewsTableViewCell.swift; sourceTree = "<group>"; };
 		D5B817665D57BC14BE5E8909 /* Pods_HaggleX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HaggleX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEB94997C203974FC9DA5992 /* Pods-HaggleX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HaggleX.debug.xcconfig"; path = "Target Support Files/Pods-HaggleX/Pods-HaggleX.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -170,6 +178,9 @@
 				B45811562720DAD7008222BE /* Verify Account */,
 				B458115B2720DD6D008222BE /* Setup Complete */,
 				B458115C2720DD7E008222BE /* Dashboard */,
+				B45811652720FAF3008222BE /* Models */,
+				B45811682721A4DE008222BE /* Views */,
+				B458116B2721AE60008222BE /* View Models */,
 				B458114427205102008222BE /* Extensions */,
 				B458114127204ACF008222BE /* CustomFonts */,
 				B42F1B9B2720335100367596 /* Resources */,
@@ -282,6 +293,31 @@
 				B45811632720DDFA008222BE /* Dashboard.storyboard */,
 			);
 			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		B45811652720FAF3008222BE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B45811662721A474008222BE /* CoinModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B45811682721A4DE008222BE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B45811692721A502008222BE /* CoinsTableViewCell.swift */,
+				B458116E272220F9008222BE /* CryptoNewsTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B458116B2721AE60008222BE /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				B458116C2721AE71008222BE /* CoinViewModel.swift */,
+			);
+			path = "View Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -530,12 +566,16 @@
 				B45811552720D0F1008222BE /* UIViewController+Extension.swift in Sources */,
 				B458114B272054CE008222BE /* CreateAccountViewController.swift in Sources */,
 				B458115E2720DD94008222BE /* SetupCompleteViewController.swift in Sources */,
+				B458116F272220F9008222BE /* CryptoNewsTableViewCell.swift in Sources */,
+				B458116A2721A502008222BE /* CoinsTableViewCell.swift in Sources */,
 				B458113E272048C8008222BE /* LoginViewController.swift in Sources */,
+				B45811672721A474008222BE /* CoinModel.swift in Sources */,
 				B45811462720511E008222BE /* UITextField+Extension.swift in Sources */,
 				B42F1B6A2720330100367596 /* AppDelegate.swift in Sources */,
 				B458114827205274008222BE /* UIView+Extension.swift in Sources */,
 				B45811622720DDD9008222BE /* DashboardViewController.swift in Sources */,
 				B42F1B6C2720330100367596 /* SceneDelegate.swift in Sources */,
+				B458116D2721AE71008222BE /* CoinViewModel.swift in Sources */,
 				B45811582720DAEF008222BE /* VerifyAccountViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
