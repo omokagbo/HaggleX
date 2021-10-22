@@ -32,7 +32,8 @@
 		B45811672721A474008222BE /* CoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45811662721A474008222BE /* CoinModel.swift */; };
 		B458116A2721A502008222BE /* CoinsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45811692721A502008222BE /* CoinsTableViewCell.swift */; };
 		B458116D2721AE71008222BE /* CoinViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B458116C2721AE71008222BE /* CoinViewModel.swift */; };
-		B458117327222ECC008222BE /* introspectionSchema.json in Resources */ = {isa = PBXBuildFile; fileRef = B458117227222ECC008222BE /* introspectionSchema.json */; };
+		B4581180272238A0008222BE /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = B458117F272238A0008222BE /* Apollo */; };
+		B45811842722CE7E008222BE /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B45811832722CE7E008222BE /* KeychainSwift */; };
 		D502E6BE02587EFB7200F66F /* Pods_HaggleX_HaggleXUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7235599EA90B6E8F0F437CC3 /* Pods_HaggleX_HaggleXUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -90,7 +91,7 @@
 		B45811662721A474008222BE /* CoinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinModel.swift; sourceTree = "<group>"; };
 		B45811692721A502008222BE /* CoinsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsTableViewCell.swift; sourceTree = "<group>"; };
 		B458116C2721AE71008222BE /* CoinViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinViewModel.swift; sourceTree = "<group>"; };
-		B458117227222ECC008222BE /* introspectionSchema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = introspectionSchema.json; sourceTree = "<group>"; };
+		B458118127223BBE008222BE /* schema.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
 		D5B817665D57BC14BE5E8909 /* Pods_HaggleX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HaggleX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEB94997C203974FC9DA5992 /* Pods-HaggleX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HaggleX.debug.xcconfig"; path = "Target Support Files/Pods-HaggleX/Pods-HaggleX.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -100,7 +101,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B45811842722CE7E008222BE /* KeychainSwift in Frameworks */,
 				ACA3AE6F5FCA54010F50FFAE /* Pods_HaggleX.framework in Frameworks */,
+				B4581180272238A0008222BE /* Apollo in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,7 +187,7 @@
 				B458114427205102008222BE /* Extensions */,
 				B458114127204ACF008222BE /* CustomFonts */,
 				B42F1B9B2720335100367596 /* Resources */,
-				B458117227222ECC008222BE /* introspectionSchema.json */,
+				B458118127223BBE008222BE /* schema.json */,
 			);
 			path = HaggleX;
 			sourceTree = "<group>";
@@ -235,8 +238,8 @@
 		B458113C272048BA008222BE /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				B458113D272048C8008222BE /* LoginViewController.swift */,
 				B458113F272048E4008222BE /* Login.storyboard */,
+				B458113D272048C8008222BE /* LoginViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -263,8 +266,8 @@
 		B4581149272054BD008222BE /* Create Account */ = {
 			isa = PBXGroup;
 			children = (
-				B458114A272054CE008222BE /* CreateAccountViewController.swift */,
 				B458114C272054E4008222BE /* CreateAccount.storyboard */,
+				B458114A272054CE008222BE /* CreateAccountViewController.swift */,
 			);
 			path = "Create Account";
 			sourceTree = "<group>";
@@ -272,8 +275,8 @@
 		B45811562720DAD7008222BE /* Verify Account */ = {
 			isa = PBXGroup;
 			children = (
-				B45811572720DAEF008222BE /* VerifyAccountViewController.swift */,
 				B45811592720DB0A008222BE /* VerifyAccount.storyboard */,
+				B45811572720DAEF008222BE /* VerifyAccountViewController.swift */,
 			);
 			path = "Verify Account";
 			sourceTree = "<group>";
@@ -328,6 +331,7 @@
 			buildConfigurationList = B42F1B902720330600367596 /* Build configuration list for PBXNativeTarget "HaggleX" */;
 			buildPhases = (
 				D12FC254C146427E07F449B4 /* [CP] Check Pods Manifest.lock */,
+				B458117D272232FD008222BE /* Apollo */,
 				B42F1B622720330100367596 /* Sources */,
 				B42F1B632720330100367596 /* Frameworks */,
 				B42F1B642720330100367596 /* Resources */,
@@ -338,6 +342,10 @@
 			dependencies = (
 			);
 			name = HaggleX;
+			packageProductDependencies = (
+				B458117F272238A0008222BE /* Apollo */,
+				B45811832722CE7E008222BE /* KeychainSwift */,
+			);
 			productName = HaggleX;
 			productReference = B42F1B662720330100367596 /* HaggleX.app */;
 			productType = "com.apple.product-type.application";
@@ -413,6 +421,10 @@
 				Base,
 			);
 			mainGroup = B42F1B5D2720330100367596;
+			packageReferences = (
+				B458117E272238A0008222BE /* XCRemoteSwiftPackageReference "apollo-ios" */,
+				B45811822722CE7D008222BE /* XCRemoteSwiftPackageReference "keychain-swift" */,
+			);
 			productRefGroup = B42F1B672720330100367596 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -431,7 +443,6 @@
 			files = (
 				B458114D272054E4008222BE /* CreateAccount.storyboard in Resources */,
 				B4581140272048E4008222BE /* Login.storyboard in Resources */,
-				B458117327222ECC008222BE /* introspectionSchema.json in Resources */,
 				B42F1B762720330500367596 /* LaunchScreen.storyboard in Resources */,
 				B45811602720DDBB008222BE /* SetupComplete.storyboard in Resources */,
 				B458115A2720DB0A008222BE /* VerifyAccount.storyboard in Resources */,
@@ -534,6 +545,24 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HaggleX-HaggleXUITests/Pods-HaggleX-HaggleXUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		B458117D272232FD008222BE /* Apollo */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Apollo;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\n# Don't run this during index builds\nif [ $ACTION = \"indexbuild\" ]; then exit 0; fi\n\n# Go to the build root and search up the chain to find the Derived Data Path where the source packages are checked out.\nDERIVED_DATA_CANDIDATE=\"${BUILD_ROOT}\"\n\nwhile ! [ -d \"${DERIVED_DATA_CANDIDATE}/SourcePackages\" ]; do\n  if [ \"${DERIVED_DATA_CANDIDATE}\" = / ]; then\n    echo >&2 \"error: Unable to locate SourcePackages directory from BUILD_ROOT: '${BUILD_ROOT}'\"\n    exit 1\n  fi\n\n  DERIVED_DATA_CANDIDATE=\"$(dirname \"${DERIVED_DATA_CANDIDATE}\")\"\ndone\n\n# Grab a reference to the directory where scripts are checked out\nSCRIPT_PATH=\"${DERIVED_DATA_CANDIDATE}/SourcePackages/checkouts/apollo-ios/scripts\"\n\nif [ -z \"${SCRIPT_PATH}\" ]; then\n    echo >&2 \"error: Couldn't find the CLI script in your checked out SPM packages; make sure to add the framework to your project.\"\n    exit 1\nfi\n\ncd \"${SRCROOT}/${TARGET_NAME}\"\n#\"${SCRIPT_PATH}\"/run-bundled-codegen.sh codegen:generate --target=swift --includes=./**/*.graphql --localSchemaFile=\"schema.json\" API.swift\n\"${SCRIPT_PATH}\"/run-bundled-codegen.sh schema:download --endpoint=\"https://api-staging.hagglex.com/graphql\"\n";
 		};
 		D12FC254C146427E07F449B4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -938,6 +967,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B458117E272238A0008222BE /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.49.0;
+			};
+		};
+		B45811822722CE7D008222BE /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/keychain-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B458117F272238A0008222BE /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B458117E272238A0008222BE /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+		B45811832722CE7E008222BE /* KeychainSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B45811822722CE7D008222BE /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			productName = KeychainSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B42F1B5E2720330100367596 /* Project object */;
 }
