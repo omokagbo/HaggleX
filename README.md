@@ -1,6 +1,6 @@
 # HaggleX
 
-Haggle X mobile app created for the HaggleX technical interview.
+Haggle X mobile app.
 
 # Requirements
 - iOS ~> 15
