@@ -62,7 +62,7 @@ On successful completion of account verification, the user is taken to a success
 
 
 ### DASHBOARD
-The user is presented with the dashboard
+The user is presented with the dashboard. Here the user can get to switch currencies between naira and dollar. The user is also able to logout, get news about crypto and a whole lot of other features
 
 <img width="280" alt="Dashboard" src="https://user-images.githubusercontent.com/69020285/138556584-d4f235a9-750d-432c-936c-2972c5bab41f.png"> 
 
