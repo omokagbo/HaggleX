@@ -7,6 +7,9 @@ Haggle X mobile app created for the HaggleX technical interview.
 - Xcode ~> 13 (9.3 compatible)
 - Swift ~> 5.0
 
+# Technologies used:
+### Swift, GraphQL
+
 # Installation
 Clone the repository
 ```sh
