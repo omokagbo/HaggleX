@@ -67,3 +67,9 @@ The user is presented with the dashboard. Here the user can get to switch curren
 <img width="280" alt="Dashboard" src="https://user-images.githubusercontent.com/69020285/138556584-d4f235a9-750d-432c-936c-2972c5bab41f.png"> 
 
 
+# DEMO
+
+https://user-images.githubusercontent.com/69020285/138558798-23c3217f-f9e3-4085-8191-2570c16d021e.mp4
+
+
+
