@@ -8,6 +8,7 @@
 import UIKit
 import FlagPhoneNumber
 import KeychainSwift
+import Apollo
 
 class CreateAccountViewController: UIViewController {
     
@@ -62,7 +63,7 @@ class CreateAccountViewController: UIViewController {
                 if let token = graphQLResult.data?.register?.token {
                     let keychain = KeychainSwift()
                     keychain.set(token, forKey: CreateAccountViewController.registerKeyChain)
-                    self.presentVerifyAccountScreen()
+                    self.presentVerifyAccountScreen(userEmail: email)
                 }
                 
                 if let errors = graphQLResult.errors {
@@ -71,6 +72,7 @@ class CreateAccountViewController: UIViewController {
                 }
                 
             }
+            
         }
     }
     
