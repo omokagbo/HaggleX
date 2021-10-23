@@ -64,6 +64,6 @@ On successful completion of account verification, the user is taken to a success
 ### DASHBOARD
 The user is presented with the dashboard
 
-<img width="280" alt="Setup complete" src="https://user-images.githubusercontent.com/69020285/138556291-46c5b648-e295-456c-987e-64f35b23927b.png"> 
+<img width="280" alt="Dashboard" src="https://user-images.githubusercontent.com/69020285/138556584-d4f235a9-750d-432c-936c-2972c5bab41f.png"> 
 
 
