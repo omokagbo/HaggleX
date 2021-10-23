@@ -34,6 +34,10 @@
 		B458116D2721AE71008222BE /* CoinViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B458116C2721AE71008222BE /* CoinViewModel.swift */; };
 		B4581180272238A0008222BE /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = B458117F272238A0008222BE /* Apollo */; };
 		B45811842722CE7E008222BE /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B45811832722CE7E008222BE /* KeychainSwift */; };
+		B45811862722DBB1008222BE /* Login.graphql in Resources */ = {isa = PBXBuildFile; fileRef = B45811852722DBB1008222BE /* Login.graphql */; };
+		B45811882722DC41008222BE /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45811872722DC41008222BE /* API.swift */; };
+		B458118D2722DE59008222BE /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = B458118C2722DE59008222BE /* Network.swift */; };
+		B458118F27238641008222BE /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B458118E27238640008222BE /* String+Extension.swift */; };
 		D502E6BE02587EFB7200F66F /* Pods_HaggleX_HaggleXUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7235599EA90B6E8F0F437CC3 /* Pods_HaggleX_HaggleXUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -92,6 +96,10 @@
 		B45811692721A502008222BE /* CoinsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsTableViewCell.swift; sourceTree = "<group>"; };
 		B458116C2721AE71008222BE /* CoinViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinViewModel.swift; sourceTree = "<group>"; };
 		B458118127223BBE008222BE /* schema.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
+		B45811852722DBB1008222BE /* Login.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = Login.graphql; sourceTree = "<group>"; };
+		B45811872722DC41008222BE /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		B458118C2722DE59008222BE /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		B458118E27238640008222BE /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		D5B817665D57BC14BE5E8909 /* Pods_HaggleX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HaggleX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEB94997C203974FC9DA5992 /* Pods-HaggleX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HaggleX.debug.xcconfig"; path = "Target Support Files/Pods-HaggleX/Pods-HaggleX.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -175,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				B42F1B992720333000367596 /* App+Scene Delegate */,
+				B458118B2722DE37008222BE /*  Networking */,
 				B42F1B9C2720337200367596 /* LaunchScreen */,
 				B458113C272048BA008222BE /* Login */,
 				B4581149272054BD008222BE /* Create Account */,
@@ -187,7 +196,9 @@
 				B458114427205102008222BE /* Extensions */,
 				B458114127204ACF008222BE /* CustomFonts */,
 				B42F1B9B2720335100367596 /* Resources */,
+				B45811872722DC41008222BE /* API.swift */,
 				B458118127223BBE008222BE /* schema.json */,
+				B45811852722DBB1008222BE /* Login.graphql */,
 			);
 			path = HaggleX;
 			sourceTree = "<group>";
@@ -259,6 +270,7 @@
 				B45811452720511E008222BE /* UITextField+Extension.swift */,
 				B458114727205274008222BE /* UIView+Extension.swift */,
 				B45811542720D0F1008222BE /* UIViewController+Extension.swift */,
+				B458118E27238640008222BE /* String+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -321,6 +333,14 @@
 				B458116C2721AE71008222BE /* CoinViewModel.swift */,
 			);
 			path = "View Models";
+			sourceTree = "<group>";
+		};
+		B458118B2722DE37008222BE /*  Networking */ = {
+			isa = PBXGroup;
+			children = (
+				B458118C2722DE59008222BE /* Network.swift */,
+			);
+			path = " Networking";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -444,6 +464,7 @@
 				B458114D272054E4008222BE /* CreateAccount.storyboard in Resources */,
 				B4581140272048E4008222BE /* Login.storyboard in Resources */,
 				B42F1B762720330500367596 /* LaunchScreen.storyboard in Resources */,
+				B45811862722DBB1008222BE /* Login.graphql in Resources */,
 				B45811602720DDBB008222BE /* SetupComplete.storyboard in Resources */,
 				B458115A2720DB0A008222BE /* VerifyAccount.storyboard in Resources */,
 				B45811642720DDFA008222BE /* Dashboard.storyboard in Resources */,
@@ -562,7 +583,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\n# Don't run this during index builds\nif [ $ACTION = \"indexbuild\" ]; then exit 0; fi\n\n# Go to the build root and search up the chain to find the Derived Data Path where the source packages are checked out.\nDERIVED_DATA_CANDIDATE=\"${BUILD_ROOT}\"\n\nwhile ! [ -d \"${DERIVED_DATA_CANDIDATE}/SourcePackages\" ]; do\n  if [ \"${DERIVED_DATA_CANDIDATE}\" = / ]; then\n    echo >&2 \"error: Unable to locate SourcePackages directory from BUILD_ROOT: '${BUILD_ROOT}'\"\n    exit 1\n  fi\n\n  DERIVED_DATA_CANDIDATE=\"$(dirname \"${DERIVED_DATA_CANDIDATE}\")\"\ndone\n\n# Grab a reference to the directory where scripts are checked out\nSCRIPT_PATH=\"${DERIVED_DATA_CANDIDATE}/SourcePackages/checkouts/apollo-ios/scripts\"\n\nif [ -z \"${SCRIPT_PATH}\" ]; then\n    echo >&2 \"error: Couldn't find the CLI script in your checked out SPM packages; make sure to add the framework to your project.\"\n    exit 1\nfi\n\ncd \"${SRCROOT}/${TARGET_NAME}\"\n#\"${SCRIPT_PATH}\"/run-bundled-codegen.sh codegen:generate --target=swift --includes=./**/*.graphql --localSchemaFile=\"schema.json\" API.swift\n\"${SCRIPT_PATH}\"/run-bundled-codegen.sh schema:download --endpoint=\"https://api-staging.hagglex.com/graphql\"\n";
+			shellScript = "\n# Don't run this during index builds\nif [ $ACTION = \"indexbuild\" ]; then exit 0; fi\n\n# Go to the build root and search up the chain to find the Derived Data Path where the source packages are checked out.\nDERIVED_DATA_CANDIDATE=\"${BUILD_ROOT}\"\n\nwhile ! [ -d \"${DERIVED_DATA_CANDIDATE}/SourcePackages\" ]; do\n  if [ \"${DERIVED_DATA_CANDIDATE}\" = / ]; then\n    echo >&2 \"error: Unable to locate SourcePackages directory from BUILD_ROOT: '${BUILD_ROOT}'\"\n    exit 1\n  fi\n\n  DERIVED_DATA_CANDIDATE=\"$(dirname \"${DERIVED_DATA_CANDIDATE}\")\"\ndone\n\n# Grab a reference to the directory where scripts are checked out\nSCRIPT_PATH=\"${DERIVED_DATA_CANDIDATE}/SourcePackages/checkouts/apollo-ios/scripts\"\n\nif [ -z \"${SCRIPT_PATH}\" ]; then\n    echo >&2 \"error: Couldn't find the CLI script in your checked out SPM packages; make sure to add the framework to your project.\"\n    exit 1\nfi\n\ncd \"${SRCROOT}/${TARGET_NAME}\"\n\"${SCRIPT_PATH}\"/run-bundled-codegen.sh codegen:generate --target=swift --includes=./**/*.graphql --localSchemaFile=\"schema.json\" API.swift\n#\"${SCRIPT_PATH}\"/run-bundled-codegen.sh schema:download --endpoint=\"https://api-staging.hagglex.com/graphql\"\n";
 		};
 		D12FC254C146427E07F449B4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -593,12 +614,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B458118F27238641008222BE /* String+Extension.swift in Sources */,
 				B45811552720D0F1008222BE /* UIViewController+Extension.swift in Sources */,
 				B458114B272054CE008222BE /* CreateAccountViewController.swift in Sources */,
 				B458115E2720DD94008222BE /* SetupCompleteViewController.swift in Sources */,
 				B458116A2721A502008222BE /* CoinsTableViewCell.swift in Sources */,
 				B458113E272048C8008222BE /* LoginViewController.swift in Sources */,
+				B458118D2722DE59008222BE /* Network.swift in Sources */,
 				B45811672721A474008222BE /* CoinModel.swift in Sources */,
+				B45811882722DC41008222BE /* API.swift in Sources */,
 				B45811462720511E008222BE /* UITextField+Extension.swift in Sources */,
 				B42F1B6A2720330100367596 /* AppDelegate.swift in Sources */,
 				B458114827205274008222BE /* UIView+Extension.swift in Sources */,

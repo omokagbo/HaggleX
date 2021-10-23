@@ -50,6 +50,11 @@ class DashboardViewController: UIViewController {
         }
     }
     
+    @IBAction func didTapViewAllStories(_ sender: UIButton) {
+        print("View all stories")
+        self.showDefaultAlert(title: "Ooops", message: "Functionality coming soon")
+    }
+    
     // MARK: - Methods
     
     private func createCardView(viewName: UIView) {

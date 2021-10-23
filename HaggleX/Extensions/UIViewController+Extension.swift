@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Apollo
 
 extension UIViewController {
     
@@ -22,6 +23,13 @@ extension UIViewController {
         
         self.present(alert, animated: true)
     }
+    
+    func showAlertForErrors(_ errors: [GraphQLError]) {
+        let message = errors
+          .map { $0.localizedDescription }
+          .joined(separator: "\n")
+        self.showDefaultAlert(title: "GraphQL Error(s)", message: message)
+      }
     
     public func presentCreateAccountScreen() {
         guard let createAccountVC = UIStoryboard(name: "CreateAccount", bundle: nil).instantiateViewController(withIdentifier: "CreateAccountViewController") as? CreateAccountViewController else {
