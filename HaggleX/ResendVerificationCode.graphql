@@ -1,0 +1,4 @@
+
+query ResendVerificationCode($data: EmailInput) {
+        resendVerificationCode(data: $data)
+}

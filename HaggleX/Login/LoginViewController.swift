@@ -36,6 +36,7 @@ class LoginViewController: UIViewController {
 //        validateLogin()
         guard let email = emailTextField.text else { return }
         guard let password = passwordTextField.text else { return }
+        
         Network.shared.apollo.perform(mutation: LoginMutation(data: LoginInput(input: email, password: password))) { [weak self] result in
             guard let self = self else { return }
             

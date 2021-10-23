@@ -39,10 +39,12 @@ extension UIViewController {
         navigationController?.pushViewController(createAccountVC, animated: true)
     }
     
-    public func presentVerifyAccountScreen() {
+    public func presentVerifyAccountScreen(userEmail: String) {
         guard let verifyAccountVC = UIStoryboard(name: "VerifyAccount", bundle: nil).instantiateViewController(withIdentifier: "VerifyAccountViewController") as? VerifyAccountViewController else {
             return
         }
+        
+        verifyAccountVC.userEmail = userEmail
         
         navigationController?.pushViewController(verifyAccountVC, animated: true)
     }
