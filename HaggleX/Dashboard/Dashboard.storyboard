@@ -77,6 +77,15 @@
                                             <action selector="didChangeSegment:" destination="Y6W-OH-hqX" eventType="valueChanged" id="ae7-Qs-Knx"/>
                                         </connections>
                                     </segmentedControl>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uix-G2-gKa">
+                                        <rect key="frame" x="172.5" y="159" width="69.5" height="31"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Logout"/>
+                                        <connections>
+                                            <action selector="didTapLogout" destination="Y6W-OH-hqX" eventType="touchUpInside" id="U6M-BY-hp6"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.1647572517" green="0.083324156699999999" blue="0.38689625259999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -84,6 +93,7 @@
                                     <constraint firstAttribute="height" constant="200" id="4Zr-j0-1nG"/>
                                     <constraint firstItem="4H7-38-2YD" firstAttribute="centerY" secondItem="fUy-39-UiH" secondAttribute="centerY" id="EWR-8V-1C4"/>
                                     <constraint firstItem="Wde-Ie-AAb" firstAttribute="trailing" secondItem="p7A-IJ-RiP" secondAttribute="trailing" id="Eec-Jv-L7M"/>
+                                    <constraint firstItem="uix-G2-gKa" firstAttribute="centerX" secondItem="BXi-me-HTR" secondAttribute="centerX" id="F7r-l4-AQp"/>
                                     <constraint firstItem="fUy-39-UiH" firstAttribute="top" secondItem="BXi-me-HTR" secondAttribute="top" constant="60" id="IW6-ve-JXJ"/>
                                     <constraint firstItem="p7A-IJ-RiP" firstAttribute="centerY" secondItem="fUy-39-UiH" secondAttribute="centerY" id="SfM-f3-9IG"/>
                                     <constraint firstItem="hMv-C4-FTZ" firstAttribute="leading" secondItem="Nz4-Eo-07d" secondAttribute="leading" id="UgM-WO-SvZ"/>
@@ -93,6 +103,7 @@
                                     <constraint firstItem="Wde-Ie-AAb" firstAttribute="centerY" secondItem="hMv-C4-FTZ" secondAttribute="centerY" id="kfa-cf-yPq"/>
                                     <constraint firstItem="Nz4-Eo-07d" firstAttribute="leading" secondItem="fUy-39-UiH" secondAttribute="leading" id="o78-C1-UU2"/>
                                     <constraint firstItem="hMv-C4-FTZ" firstAttribute="top" secondItem="Nz4-Eo-07d" secondAttribute="bottom" constant="10" id="pJp-QY-aDM"/>
+                                    <constraint firstAttribute="bottom" secondItem="uix-G2-gKa" secondAttribute="bottom" constant="10" id="ugx-rC-VDR"/>
                                 </constraints>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="04J-Fr-979">

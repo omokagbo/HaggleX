@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import KeychainSwift
 
 class DashboardViewController: UIViewController {
     
@@ -71,6 +72,10 @@ class DashboardViewController: UIViewController {
         createCardView(viewName: cardView2)
         createCardView(viewName: cardView3)
         createCardView(viewName: cardView4)
+    }
+    
+    @IBAction func didTapLogout() {
+        self.dismiss(animated: true)
     }
     
 }
