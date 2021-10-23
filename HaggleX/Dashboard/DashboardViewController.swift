@@ -75,7 +75,9 @@ class DashboardViewController: UIViewController {
     }
     
     @IBAction func didTapLogout() {
-        self.dismiss(animated: true)
+        let loginViewController = UIStoryboard(name: "Login", bundle: nil).instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+        loginViewController.modalPresentationStyle = .fullScreen
+        self.present(loginViewController, animated: true)
     }
     
 }
