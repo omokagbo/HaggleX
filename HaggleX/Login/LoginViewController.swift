@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import KeychainSwift
 
 class LoginViewController: UIViewController {
     
@@ -15,6 +16,9 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var passwordTextField: UITextField!
     
+    // MARK: - Properties
+    
+    static let loginKeychainKey = "login"
     
     // MARK: - View Life Cycle
     
@@ -29,10 +33,28 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func didTapLogin(_ sender: UIButton) {
-        // validate login
-        
-        // present dashboard
-        self.presentDashboard()
+//        validateLogin()
+        guard let email = emailTextField.text else { return }
+        guard let password = passwordTextField.text else { return }
+        Network.shared.apollo.perform(mutation: LoginMutation(data: LoginInput(input: email, password: password))) { [weak self] result in
+            guard let self = self else { return }
+            
+            switch result {
+            case .failure(let error):
+                self.showDefaultAlert(title: "Network Error", message: error.localizedDescription)
+            case .success(let graphQLResult):
+                if let token = graphQLResult.data?.login.token {
+                    let keychain = KeychainSwift()
+                    keychain.set(token, forKey: LoginViewController.loginKeychainKey)
+                    self.presentDashboard()
+                }
+                
+                if let errors = graphQLResult.errors {
+                    let message = errors.map({ $0.localizedDescription }).joined(separator: "\n")
+                    self.showDefaultAlert(title: "GraphQL Error(s)", message: message)
+                }
+            }
+        }
     }
     
     @IBAction func didTapCreateAccount(_ sender: UIButton) {
@@ -40,7 +62,16 @@ class LoginViewController: UIViewController {
     }
     
     private func validateLogin() {
+        guard let email = emailTextField.text else { return }
+        guard let password = passwordTextField.text else { return }
         
+        if email.isEmpty || email == "".replacingOccurrences(of: " ", with: "") {
+            self.showDefaultAlert(title: "Invalid email", message: "Please enter a valid email")
+        }
+        
+        if password.isEmpty || password == "".replacingOccurrences(of: " ", with: "") {
+            self.showDefaultAlert(title: "Invalid password", message: "Please enter a valid password")
+        }
     }
     
 }

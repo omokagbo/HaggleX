@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import KeychainSwift
 
 class DashboardViewController: UIViewController {
     
@@ -50,6 +51,11 @@ class DashboardViewController: UIViewController {
         }
     }
     
+    @IBAction func didTapViewAllStories(_ sender: UIButton) {
+        print("View all stories")
+        self.showDefaultAlert(title: "Ooops", message: "Functionality coming soon")
+    }
+    
     // MARK: - Methods
     
     private func createCardView(viewName: UIView) {
@@ -66,6 +72,10 @@ class DashboardViewController: UIViewController {
         createCardView(viewName: cardView2)
         createCardView(viewName: cardView3)
         createCardView(viewName: cardView4)
+    }
+    
+    @IBAction func didTapLogout() {
+        self.dismiss(animated: true)
     }
     
 }

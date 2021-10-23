@@ -1,0 +1,6 @@
+framework module Pods_HaggleX_HaggleXUITests {
+  umbrella header "Pods-HaggleX-HaggleXUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
