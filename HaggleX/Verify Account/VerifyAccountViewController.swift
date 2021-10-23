@@ -54,7 +54,19 @@ class VerifyAccountViewController: UIViewController {
     }
     
     @IBAction func didTapResendCode(_ sender: UIButton) {
-        
+        Network.shared.apollo.fetch(query: ResendVerificationCodeQuery(data: EmailInput(email: userEmail))) { [weak self] result in
+            
+            switch result {
+            case .failure(let error):
+                self?.showDefaultAlert(title: "Network Error", message: error.localizedDescription)
+                
+            case .success(let graphQLResult):
+                if let errors = graphQLResult.errors {
+                    let message = errors.map({ $0.localizedDescription }).joined(separator: "\n")
+                    self?.showDefaultAlert(title: "GraphQL Error(s)", message: message)
+                }
+            }
+        }
     }
 
 }
