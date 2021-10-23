@@ -38,6 +38,7 @@
 		B45811882722DC41008222BE /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45811872722DC41008222BE /* API.swift */; };
 		B458118D2722DE59008222BE /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = B458118C2722DE59008222BE /* Network.swift */; };
 		B458118F27238641008222BE /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B458118E27238640008222BE /* String+Extension.swift */; };
+		B4581191272390F1008222BE /* Register.graphql in Resources */ = {isa = PBXBuildFile; fileRef = B4581190272390F1008222BE /* Register.graphql */; };
 		D502E6BE02587EFB7200F66F /* Pods_HaggleX_HaggleXUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7235599EA90B6E8F0F437CC3 /* Pods_HaggleX_HaggleXUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -100,6 +101,7 @@
 		B45811872722DC41008222BE /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		B458118C2722DE59008222BE /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		B458118E27238640008222BE /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		B4581190272390F1008222BE /* Register.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = Register.graphql; sourceTree = "<group>"; };
 		D5B817665D57BC14BE5E8909 /* Pods_HaggleX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HaggleX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEB94997C203974FC9DA5992 /* Pods-HaggleX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HaggleX.debug.xcconfig"; path = "Target Support Files/Pods-HaggleX/Pods-HaggleX.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -199,6 +201,7 @@
 				B45811872722DC41008222BE /* API.swift */,
 				B458118127223BBE008222BE /* schema.json */,
 				B45811852722DBB1008222BE /* Login.graphql */,
+				B4581190272390F1008222BE /* Register.graphql */,
 			);
 			path = HaggleX;
 			sourceTree = "<group>";
@@ -465,6 +468,7 @@
 				B4581140272048E4008222BE /* Login.storyboard in Resources */,
 				B42F1B762720330500367596 /* LaunchScreen.storyboard in Resources */,
 				B45811862722DBB1008222BE /* Login.graphql in Resources */,
+				B4581191272390F1008222BE /* Register.graphql in Resources */,
 				B45811602720DDBB008222BE /* SetupComplete.storyboard in Resources */,
 				B458115A2720DB0A008222BE /* VerifyAccount.storyboard in Resources */,
 				B45811642720DDFA008222BE /* Dashboard.storyboard in Resources */,

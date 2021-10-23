@@ -7,6 +7,7 @@
 
 import UIKit
 import FlagPhoneNumber
+import KeychainSwift
 
 class CreateAccountViewController: UIViewController {
     
@@ -15,6 +16,8 @@ class CreateAccountViewController: UIViewController {
     var formattedPhoneNumber = ""
     
     var listController: FPNCountryListViewController = FPNCountryListViewController(style: .grouped)
+    
+    static let registerKeyChain = "register"
     
     // MARK: - Outlets
     
@@ -40,7 +43,35 @@ class CreateAccountViewController: UIViewController {
     // MARK: - Actions
     
     @IBAction func didTapSignup(_ sender: UIButton) {
-        self.presentVerifyAccountScreen()
+        guard let email = emailTextField.text else { return }
+        guard let password = passwordTextField.text else { return }
+        guard let username = usernameTextField.text else { return }
+        guard let phoneNumber = phoneNumberTextField.text else { return }
+        guard let referalCode = referralCodeTextField.text else { return }
+        
+        Network.shared.apollo.perform(mutation: RegisterMutation(data: CreateUserInput(email: email, username: username, password: password, phonenumber: phoneNumber, referralCode: referalCode, phoneNumberDetails: nil, country: "Nigeria", currency: "Naira"))) { [weak self] result in
+            
+            guard let self = self else { return }
+            
+            switch result {
+            case .failure(let error):
+                self.showDefaultAlert(title: "Network Error", message: error.localizedDescription)
+                
+            case .success(let graphQLResult):
+                
+                if let token = graphQLResult.data?.register?.token {
+                    let keychain = KeychainSwift()
+                    keychain.set(token, forKey: CreateAccountViewController.registerKeyChain)
+                    self.presentVerifyAccountScreen()
+                }
+                
+                if let errors = graphQLResult.errors {
+                    let message = errors.map({ $0.localizedDescription }).joined(separator: "\n")
+                    self.showDefaultAlert(title: "GraphQL Error(s)", message: message)
+                }
+                
+            }
+        }
     }
     
     // MARK: - Methods
