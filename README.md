@@ -4,7 +4,7 @@ Haggle X mobile app.
 
 # Requirements
 - iOS ~> 15
-- Xcode ~> 13 (9.3 compatible)
+- Xcode ~> 13 (13 compatible)
 - Swift ~> 5.0
 
 # Technologies used:
